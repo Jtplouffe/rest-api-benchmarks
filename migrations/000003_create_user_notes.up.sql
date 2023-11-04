@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS user_notes (
+    id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+    user_id INTEGER REFERENCES users (id) NOT NULL,
+    title VARCHAR(100) NOT NULL,
+    content TEXT NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT now(),
+    updated_at TIMESTAMP NOT NULL DEFAULT now(),
+    deleted_at TIMESTAMP
+);

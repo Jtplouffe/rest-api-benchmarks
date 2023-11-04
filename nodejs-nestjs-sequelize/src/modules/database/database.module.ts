@@ -1,0 +1,24 @@
+import { Module } from "@nestjs/common";
+import { SequelizeModule } from "@nestjs/sequelize";
+import { UsersModule } from "./users/users.module";
+
+@Module({
+    imports: [
+        SequelizeModule.forRoot({
+            dialect: "postgres",
+            host: "127.0.0.1",
+            username: "root",
+            password: "root",
+            database: "rest_api_benchmarks",
+            autoLoadModels: true,
+            synchronize: false,
+            define: {
+                timestamps: true,
+                paranoid: true,
+                underscored: true,
+            },
+        }),
+        UsersModule,
+    ],
+})
+export class DatabaseModule {}
