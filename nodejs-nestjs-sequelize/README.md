@@ -8,7 +8,7 @@
 
 ## Details
 
-In this implementation, the included models are leaded in `separate` queries. This drastically improved performances.
+In this implementation, the included models are loaded in `separate` queries. This drastically improves performances.
 
 ## Results
 
