@@ -6,7 +6,7 @@ import { UsersModule } from "./users/users.module";
     imports: [
         SequelizeModule.forRoot({
             dialect: "postgres",
-            host: "127.0.0.1",
+            host: "host.docker.internal",
             username: "root",
             password: "root",
             database: "rest_api_benchmarks",
