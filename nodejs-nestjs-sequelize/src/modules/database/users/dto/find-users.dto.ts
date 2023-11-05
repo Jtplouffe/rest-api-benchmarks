@@ -36,11 +36,11 @@ export class FindUsersDto {
         }
 
         if (this.include.includes("contacts")) {
-            includes.push({ model: UserContacts });
+            includes.push({ model: UserContacts, separate: true });
         }
 
         if (this.include.includes("notes")) {
-            includes.push({ model: UserNotes });
+            includes.push({ model: UserNotes, separate: true });
         }
 
         return includes;
