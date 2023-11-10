@@ -1,0 +1,8 @@
+src/database/prisma.rs
+target/
+debug/
+Cargo.lock
+**/*.rs.bk
+.pdb
+.tmp
+.idea/
