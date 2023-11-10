@@ -35,3 +35,4 @@ They are limited to 1 cpu (Ryzen 7 7700X) and 128M memory.
 
 - [nodejs-nestjs-sequelize](./nodejs-nestjs-sequelize/)
 - [go-fiber-bun](./go-fiber-bun/)
+- [rust-axum-prisma](./rust-axum-prisma/)
