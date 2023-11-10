@@ -1,7 +1,6 @@
 datasource db {
     provider = "postgresql"
     url      = "postgres://root:root@host.docker.internal/rest_api_benchmarks?sslmode=disable"
-    // url      = "postgres://root:root@127.0.0.1/rest_api_benchmarks?sslmode=disable"
 }
 
 generator client {
