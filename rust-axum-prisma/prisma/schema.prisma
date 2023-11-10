@@ -1,0 +1,51 @@
+datasource db {
+    provider = "postgresql"
+    url      = "postgres://root:root@host.docker.internal/rest_api_benchmarks?sslmode=disable"
+    // url      = "postgres://root:root@127.0.0.1/rest_api_benchmarks?sslmode=disable"
+}
+
+generator client {
+    provider = "cargo prisma"
+    output   = "../src/database/prisma.rs"
+}
+
+model Users {
+    id        Int            @id @default(autoincrement())
+    username  String         @unique
+    email     String         @unique
+    createdAt DateTime       @default(now()) @map("created_at")
+    updatedAt DateTime       @default(now()) @map("updated_at")
+    deletedAt DateTime?      @map("deleted_at")
+    contacts  UserContacts[]
+    notes     UserNotes[]
+
+    @@map("users")
+}
+
+model UserContacts {
+    id        Int       @id @default(autoincrement())
+    userId    Int       @map("user_id")
+    name      String
+    email     String
+    createdAt DateTime  @default(now()) @map("created_at")
+    updatedAt DateTime  @default(now()) @map("updated_at")
+    deletedAt DateTime? @map("deleted_at")
+
+    user Users @relation(fields: [userId], references: [id])
+
+    @@map("user_contacts")
+}
+
+model UserNotes {
+    id        Int       @id @default(autoincrement())
+    userId    Int       @map("user_id")
+    title     String
+    content   String
+    createdAt DateTime  @default(now()) @map("created_at")
+    updatedAt DateTime  @default(now()) @map("updated_at")
+    deletedAt DateTime? @map("deleted_at")
+
+    user Users @relation(fields: [userId], references: [id])
+
+    @@map("user_notes")
+}

@@ -1,6 +1,5 @@
 import { HttpStatus, ValidationPipe } from "@nestjs/common";
 import { NestFactory } from "@nestjs/core";
-import * as morgan from "morgan";
 import { AppModule } from "./modules/app.module";
 
 async function bootstrap() {
@@ -8,7 +7,8 @@ async function bootstrap() {
         bodyParser: true,
     });
 
-    app.use(morgan("tiny"));
+    // Disable logging when benchmarking
+    // app.use(morgan("tiny"));
     app.useGlobalPipes(
         new ValidationPipe({
             whitelist: true,

@@ -12,6 +12,8 @@ import { UsersModule } from "./users/users.module";
             database: "rest_api_benchmarks",
             autoLoadModels: true,
             synchronize: false,
+            // Disable logging when benchmarking
+            logging: false,
             define: {
                 timestamps: true,
                 paranoid: true,

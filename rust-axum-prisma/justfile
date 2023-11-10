@@ -1,5 +1,6 @@
 check:
-    npm run check
+    cargo check
+    cargo clippy
 
 run:
     docker-compose build

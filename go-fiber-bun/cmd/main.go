@@ -6,7 +6,6 @@ import (
 
 	"github.com/cockroachdb/errors"
 	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/middleware/logger"
 )
 
 func main() {
@@ -16,7 +15,10 @@ func main() {
 	}
 
 	router := fiber.New()
-	router.Use(logger.New())
+
+	// Disable logging when benchmarking
+	// router.Use(logger.New())
+
 	endpoints.RegisterEndpoints(router)
 
 	if err := router.Listen("0.0.0.0:8080"); err != nil {

@@ -13,29 +13,28 @@ In this implementation, the included models are loaded in `separate` queries. Th
 ## Results
 
 ```
-Summary:
+``Summary:
   Elapsed        1m0s
-  Count          6667
-    2xx          6667
-  RPS         111.116
-  Reads    20.043MB/s
-  Writes    0.010MB/s
+  Count          6320
+    2xx          6320
+  RPS         105.333
+  Reads    19.000MB/s
+  Writes    0.009MB/s
 
 Statistics    Min       Mean     StdDev      Max
-  Latency   56.953ms  89.851ms  24.618ms  219.359ms
-  RPS         79.9     111.11     6.37     121.04
+  Latency   20.711ms  94.849ms  33.126ms  264.137ms
+  RPS        93.03     105.37     5.73     120.05
 
 Latency Percentile:
   P50         P75        P90        P95        P99       P99.9     P99.99
-  87.095ms  94.665ms  107.505ms  149.589ms  185.806ms  197.131ms  219.359ms
+  86.629ms  97.481ms  138.038ms  176.199ms  220.316ms  243.829ms  264.137ms
 
 Latency Histogram:
-  62.291ms    720  10.80%
-  73.926ms   1278  19.17%
-  88.553ms   3217  48.25%
-  99.435ms    893  13.39%
-  131.584ms   258   3.87%
-  165.648ms   164   2.46%
-  179.071ms    96   1.44%
-  188.549ms    41   0.61%
-```
+  34.773ms      7   0.11%
+  64.195ms    987  15.62%
+  84.869ms   3127  49.48%
+  100.886ms  1441  22.80%
+  145.133ms   457   7.23%
+  184.323ms   200   3.16%
+  213.511ms    85   1.34%
+  233.918ms    16   0.25%`
