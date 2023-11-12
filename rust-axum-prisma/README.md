@@ -11,27 +11,27 @@
 ```
 Summary:
   Elapsed        1m0s
-  Count         25087
-    2xx         25087
-  RPS         418.113
-  Reads    78.287MB/s
+  Count         25336
+    2xx         25336
+  RPS         422.265
+  Reads    79.065MB/s
   Writes    0.037MB/s
 
-Statistics    Min      Mean    StdDev      Max
-  Latency   6.118ms  23.911ms  4.835ms  137.177ms
-  RPS       383.76    418.11    6.14     427.99
+Statistics    Min      Mean    StdDev     Max
+  Latency   7.027ms  23.675ms  4.482ms  39.798ms
+  RPS         417     422.16     2.6     431.73
 
 Latency Percentile:
-  P50         P75       P90       P95       P99      P99.9     P99.99
-  24.095ms  26.751ms  29.207ms  30.266ms  33.558ms  36.643ms  133.718ms
+  P50        P75      P90       P95       P99     P99.9     P99.99
+  23.954ms  26.7ms  29.224ms  30.105ms  33.28ms  36.727ms  39.632ms
 
 Latency Histogram:
-  12.867ms   715   2.85%
-  17.867ms  3165  12.62%
-  22.832ms  9691  38.63%
-  26.044ms  7711  30.74%
-  28.472ms  2513  10.02%
-  30.895ms  1044   4.16%
-  32.914ms   233   0.93%
-  35.129ms    15   0.06
+  9.308ms    168   0.66%
+  13.617ms   847   3.34%
+  17.393ms  2539  10.02%
+  21.627ms  6708  26.48%
+  24.918ms  8426  33.26%
+  28.183ms  6588  26.00%
+  30.072ms    35   0.14%
+  32.415ms    25   0.10%
 ```
