@@ -11,6 +11,6 @@ services:
       resources:
         limits:
           cpus: "1"
-          memory: "128M"
+          memory: "512M"
         reservations:
-          memory: "128M"
+          memory: "512M"

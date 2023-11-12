@@ -6,35 +6,32 @@
 - [NestJS](https://nestjs.com/)
 - [Sequelize](https://sequelize.org/)
 
-## Details
-
-In this implementation, the included models are loaded in `separate` queries. This drastically improves performances.
-
 ## Results
 
 ```
-``Summary:
+Summary:
   Elapsed        1m0s
-  Count          6320
-    2xx          6320
-  RPS         105.333
-  Reads    19.000MB/s
-  Writes    0.009MB/s
+  Count          8459
+    2xx          8459
+  RPS         140.982
+  Reads    25.431MB/s
+  Writes    0.013MB/s
 
 Statistics    Min       Mean     StdDev      Max
-  Latency   20.711ms  94.849ms  33.126ms  264.137ms
-  RPS        93.03     105.37     5.73     120.05
+  Latency   18.672ms  70.892ms  10.653ms  146.404ms
+  RPS         126      140.98     5.03     149.11
 
 Latency Percentile:
-  P50         P75        P90        P95        P99       P99.9     P99.99
-  86.629ms  97.481ms  138.038ms  176.199ms  220.316ms  243.829ms  264.137ms
+  P50        P75       P90       P95      P99       P99.9     P99.99
+  70.42ms  74.087ms  83.674ms  94.97ms  103.51ms  123.727ms  146.404ms
 
 Latency Histogram:
-  34.773ms      7   0.11%
-  64.195ms    987  15.62%
-  84.869ms   3127  49.48%
-  100.886ms  1441  22.80%
-  145.133ms   457   7.23%
-  184.323ms   200   3.16%
-  213.511ms    85   1.34%
-  233.918ms    16   0.25%`
+  24.586ms      4   0.05%
+  39.357ms      3   0.04%
+  57.976ms    384   4.54%
+  66.651ms   4384  51.83%
+  72.643ms   2640  31.21%
+  83.615ms    624   7.38%
+  97.166ms    386   4.56%
+  103.965ms    34   0.40%
+```
