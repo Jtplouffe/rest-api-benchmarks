@@ -1,0 +1,16 @@
+name: dart_alfred_drift
+version: 1.0.0
+
+environment:
+  sdk: ^3.2.0
+
+dependencies:
+  alfred: ^1.1.1
+  drift: ^2.13.0
+  drift_postgres: ^0.1.0
+  get_it: ^7.6.4
+
+dev_dependencies:
+  lints: ^2.1.0
+  drift_dev: ^2.13.0
+  build_runner: ^2.4.6

@@ -37,3 +37,4 @@ They are limited to 1 cpu (Ryzen 7 7700X) and 128M memory.
 - [go-fiber-bun](./go-fiber-bun/)
 - [rust-axum-prisma](./rust-axum-prisma/)
 - [elixir-phoenix-ecto](./elixir_phoenix_ecto/)
+- [dart-alfred-drift](./dart-alfred-drift/)
